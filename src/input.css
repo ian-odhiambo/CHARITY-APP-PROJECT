@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+
+.auth-content {
+  @apply flex items-center justify-center;
+  min-height: calc(100vh - 150px);
+}
+
+.auth-content form {
+  @apply space-y-3.5 w-4/5 sm:w-3/5 lg:max-w-[700px];
+}
+
+.form-group > label {
+  @apply block mb-0.5;
+}
+
+.form-group > input,
+.form-group > select {
+  @apply w-full py-1 px-2 rounded-none outline-0 border border-gray-700;
+}
+
+form .grouped {
+  @apply block space-y-4 sm:flex sm:space-y-0 sm:gap-4;
+}
+
+form .grouped > div {
+  @apply w-full sm:w-1/2;
+}
+
+.form-group > label {
+  @apply block mb-0.5;
+}
+
+.form-group > input,
+.form-group > select {
+  @apply w-full py-1 px-2 rounded-none outline-0 border border-gray-700;
+}
+
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charity Minds</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="bg-blue-300">
+      <nav class="flex container mx-auto justify-between items-center py-5">
+        <a href="index.html" class="logo flex items-center">
+          <img
+            src="IMAGE/logo.png"
+            alt="Charity Minds logo"
+            class="h-10 w-auto mr-2"
+          />
+          <h1 class="font-bold italic text-lg">Charity Minds</h1>
+        </a>
+        <ul class="flex gap-5 text-red-800 font-bold">
+          <li>
+            <a href="login.html">Login</a>
+          </li>
+          <li>
+            <a href="register.html">Register</a>
+          </li>
+          <li>
+            <a href="dashboard.html">Dashboard</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="auth-content">
+      <form>
+        <div class="grouped">
+          <div class="form-group">
+            <label for="fName">First Name:</label>
+            <input type="text" id="fName" placeholder="John" />
+          </div>
+
+          <div class="form-group">
+            <label for="lName">Last Name:</label>
+            <input type="text" id="lName" placeholder="Wick" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="johnwick" />
+        </div>
+
+        <div class="grouped">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="john@wick.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="+254712345678" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" />
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender">
+            <option value="0">--Select Gender--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="grouped">
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="**************" />
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="**************"
+            />
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-blue-800 text-white cursor-pointer py-2 mt-4"
+        >
+          Create Account
+        </button>
+        <p class="text-center mt-4">
+          Already have an account?
+          <a href="login.html" class="text-red-800">Login.</a>
+        </p>
+      </form>
+    </main>
+
+    <footer
+      class="bg-blue-950 fixed bottom-0 text-center w-full py-1.5 text-white"
+    >
+      <div>
+        <p>© 2025 Charity Minds. All rights reserved Arylide.</p>
+      </div>
+      <script src="js/register.js"></script>
+    </footer>
+     
+  </body>
+</html>
